@@ -1,0 +1,31 @@
+Siddall@Siddall-T490 MINGW64 ~/Desktop/Courses/DevOps_with_Docker_2021/part1 (main)
+$ docker run -d -it --name oneFour ubuntu sh -c 'echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website;'
+6e7336be3f7951e507bdf0172c2387fc819868598a3e9b86de84831bd4a00560
+
+Siddall@Siddall-T490 MINGW64 ~/Desktop/Courses/DevOps_with_Docker_2021/part1 (main)
+$ docker exec -it oneFour bash
+root@6e7336be3f79:/# apt update
+Get:1 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+...
+All packages are up to date.
+root@6e7336be3f79:/# apt install curl
+Reading package lists... Done
+Building dependency tree
+Reading state information... Done
+...
+Running hooks in /etc/ca-certificates/update.d...
+done.
+root@6e7336be3f79:/# exit
+exit
+
+Siddall@Siddall-T490 MINGW64 ~/Desktop/Courses/DevOps_with_Docker_2021/part1 (main)
+$ docker attach oneFour
+helsinki.fi
+Searching..
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://www.helsinki.fi/">here</a>.</p>
+</body></html>
