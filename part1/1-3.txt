@@ -1,0 +1,21 @@
+Siddall@Siddall-T490 MINGW64 ~/Desktop/Courses/DevOps_with_Docker_2021/part1 (main)
+$ docker run -d -it --name oneThree devopsdockeruh/simple-web-service:ubuntu
+Unable to find image 'devopsdockeruh/simple-web-service:ubuntu' locally
+ubuntu: Pulling from devopsdockeruh/simple-web-service
+5d3b2c2d21bb: Pull complete
+3fc2062ea667: Pull complete
+75adf526d75b: Pull complete
+965d4bbb586a: Pull complete
+4f4fb700ef54: Pull complete
+Digest: sha256:d44e1dce398732e18c7c2bad9416a072f719af33498302b02929d4c112e88d2a
+Status: Downloaded newer image for devopsdockeruh/simple-web-service:ubuntu
+264ac4b3925c8eee7a777921040096cce4136c14dc415169169b68163228c569
+
+Siddall@Siddall-T490 MINGW64 ~/Desktop/Courses/DevOps_with_Docker_2021/part1 (main)
+$ docker exec -it oneThree bash
+root@264ac4b3925c:/usr/src/app# tail -f ./text.log
+2021-07-28 15:42:38 +0000 UTC
+2021-07-28 15:42:40 +0000 UTC
+2021-07-28 15:42:42 +0000 UTC
+2021-07-28 15:42:44 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
