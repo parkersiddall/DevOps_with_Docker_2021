@@ -1,0 +1,15 @@
+# Compare the image sizes
+REPOSITORY                          TAG       IMAGE ID       CREATED        SIZE
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   4 months ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   4 months ago   15.7MB
+
+# Check the message is the same
+Siddall@Siddall-T490 MINGW64 ~/Desktop/Courses/DevOps_with_Docker_2021 (main)
+$ docker exec -it b00 sh
+/usr/src/app # tail -f ./text.log
+2021-07-29 09:55:41 +0000 UTC
+2021-07-29 09:55:43 +0000 UTC
+2021-07-29 09:55:45 +0000 UTC
+2021-07-29 09:55:47 +0000 UTC
+2021-07-29 09:55:49 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
