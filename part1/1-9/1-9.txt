@@ -1,0 +1,2 @@
+Siddall@Siddall-T490 MINGW64 ~/Desktop/Courses/DevOps_with_Docker_2021/part1/1-9 (main)
+$ docker run -d -v "$(pwd -W)/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service
