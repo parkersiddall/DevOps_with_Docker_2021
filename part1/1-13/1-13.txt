@@ -1,0 +1,2 @@
+Siddall@Siddall-T490 MINGW64 ~/Desktop/Courses/material-applications/example-backend (main)
+$ docker run -d -p 8080:8080 1-13
