@@ -1,0 +1,3 @@
+The Dockerfile for the frontend had an environment variable which was the URL to call the backend. 
+
+I removed this environment variable, as the README states that the default option calls the URL /api. This is exactly what was needed to call the backend after having set up nginx.
