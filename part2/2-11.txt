@@ -1,0 +1,9 @@
+After finishing the Full Stack Open MOOC earlier this year I created the following app using ExpressJS and React/Redux:
+
+https://bookmarks-by-parker.herokuapp.com/
+
+For exercise 2.11 I wrote Dockerfiles for the frontend and backend, then a docker-compose file in order to get them up and running. 
+
+You can check out the work here:
+
+https://github.com/parkersiddall/bookmarks_app
